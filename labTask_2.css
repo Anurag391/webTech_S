@@ -1,0 +1,52 @@
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+#top {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    color: darkblue;
+    margin-top: 20px;
+}
+
+h3 {
+    color: darkgreen;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+ul, ol {
+    margin-left: 30px;
+}
+
+section {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: darkred;
+}
+
+a:hover {
+    color: blue;
+}
