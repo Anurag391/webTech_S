@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab Task 02</title>
+</head>
+
+<body>
+
+<h2>Lab Task 02 - Functions, Loops and Strings</h2>
+
+<script>
+
+
+function calculateSum(a,b){
+    return a+b;
+}
+
+let sum = calculateSum(5,10);
+document.write("<h3>Part A: Function</h3>");
+document.write("Sum = " + sum + "<br>");
+
+
+document.write("<h3>Part B: Loops</h3>");
+
+document.write("Numbers from 1 to 10:<br>");
+
+for(let i=1;i<=10;i++){
+    document.write(i + "<br>");
+}
+
+document.write("<br>Even numbers from 1 to 20:<br>");
+
+let num=2;
+
+while(num<=20){
+    document.write(num + "<br>");
+    num = num + 2;
+}
+
+
+document.write("<h3>Part C: String Operations</h3>");
+
+let fullName="Rahim Khan";
+
+document.write("Full Name: " + fullName + "<br>");
+document.write("Uppercase: " + fullName.toUpperCase() + "<br>");
+document.write("Length: " + fullName.length + "<br>");
+
+let firstName = fullName.split(" ")[0];
+
+document.write("First Name: " + firstName + "<br>");
+
+
+document.write("<h3>Part D: User Input Function</h3>");
+
+function checkString(){
+
+let text = prompt("Enter a word");
+
+if(text.length > 5){
+    document.write("String length is greater than 5");
+}
+else{
+    document.write("String length is 5 or less");
+}
+
+}
+
+checkString();
+
+
+</script>
+
+</body>
+</html>

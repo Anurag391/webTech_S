@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab Task 01</title>
+</head>
+
+<body>
+
+<h2>JavaScript Basics and User Interaction</h2>
+
+<script>
+
+
+alert("Welcome to JavaScript Lab");
+
+console.log("This message is shown in the console");
+
+document.write("<h3>Welcome to JavaScript Lab</h3>");
+
+
+
+
+let studentName = "Rahim";
+let studentAge = 20;
+
+let nextAge = studentAge + 1;
+
+document.write("Student Name: " + studentName + "<br>");
+document.write("Student Age: " + studentAge + "<br>");
+document.write("Next Year Age: " + nextAge + "<br>");
+
+
+
+let num1 = prompt("Enter first number");
+let num2 = prompt("Enter second number");
+
+num1 = Number(num1);
+num2 = Number(num2);
+
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+
+document.write("<h3>Calculator Result</h3>");
+document.write("Sum: " + sum + "<br>");
+document.write("Difference: " + difference + "<br>");
+document.write("Product: " + product + "<br>");
+
+
+
+let number = prompt("Enter a number to check even or odd");
+
+number = Number(number);
+
+if(number % 2 == 0){
+document.write("The number is Even");
+}
+else{
+document.write("The number is Odd");
+}
+
+</script>
+
+</body>
+</html>
