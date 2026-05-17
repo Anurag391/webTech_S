@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Student Information</title>
+
+<script>
+
+function loadStudent()
+{
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function()
+    {
+        if(this.readyState==4 && this.status==200)
+        {
+            
+            var student = JSON.parse(this.responseText);
+
+            // Display Data
+            document.getElementById("output").innerHTML =
+
+            "Name: " + student.name + "<br>" +
+
+            "ID: " + student.id + "<br>" +
+
+            "Department: " + student.department + "<br>" +
+
+            "CGPA: " + student.cgpa;
+        }
+    };
+
+    xhttp.open("GET","student.php",true);
+
+    xhttp.send();
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Student Information System</h2>
+
+<button onclick="loadStudent()">
+Show Student Info
+</button>
+
+<br><br>
+
+<div id="output">
+
+</div>
+
+</body>
+
+</html>
